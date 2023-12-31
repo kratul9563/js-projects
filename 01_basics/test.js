@@ -96,8 +96,14 @@ const gameName= new String('Kratul')
 // *************************** Numbers and Math***********************
 
 
-const balance = new Number(100)
-console.log(balance)
+const balance = new Number(10.89)
 
-console.log(balance.toString())
+
+// console.log(balance)
+// console.log(balance.toString())
+
+
+// console.log(balance.toFixed(2))
+// console.log(balance.toLocaleString('en-IN'))
+// console.log(balance.toPrecision(2))
 
