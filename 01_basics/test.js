@@ -47,3 +47,15 @@ let str1="Hello "
 let str2="Kratul"
 
 // console.log(str1+str2)     // we have join two string here 
+
+
+
+let x= 3
+let y= x++
+
+// console.table([x,y])  // here first initialize than increment
+
+let a=3
+let b=++a
+
+// console.table([a,b])   //here first increment than initialize
