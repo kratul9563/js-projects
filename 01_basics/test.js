@@ -59,3 +59,45 @@ let a=3
 let b=++a
 
 // console.table([a,b])   //here first increment than initialize
+
+
+let userOne = {
+    email: "kratulsingh9517@gmail.com",
+    upi: "@kratul123"
+}
+
+let userTwo=userOne
+
+// console.log(userOne)
+
+userTwo.email = "kratul@gmail.com"
+
+// console.log(userTwo)
+
+// console.log(userOne.email)
+// console.log(userTwo.email)
+
+
+//  ********************string interpolation******************
+
+const name="kratul"
+const s1=30
+
+// console.log(`My name is ${name} and score is ${s1}`)
+
+
+const gameName= new String('Kratul')
+
+// console.log(gameName[0])
+// console.log(gameName.length)
+// console.log(gameName.toUpperCase())
+
+
+// *************************** Numbers and Math***********************
+
+
+const balance = new Number(100)
+console.log(balance)
+
+console.log(balance.toString())
+
