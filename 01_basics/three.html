@@ -1,0 +1,55 @@
+
+ <!---------------------- Relation in DOM --------------------->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM</title>
+    </head>
+    <body style="background-color: black; color:#fff;">
+        <ul class="language">
+            <li>Javascript</li>
+        </ul>
+    </body>
+    <script>
+
+        //  add approach
+        
+        function addlanguage(langName){
+            const li=document.createElement('li');
+            li.innerHTML=`${langName}`;
+            document.querySelector('.language');
+            appendChild(li);
+        }
+        addlanguage("Python")
+
+        // add approach
+
+        function addoptiLanguage(langName){  // both function are same but this is optimize approach
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(langName));
+            document.querySelector('.language').appendChild(li);
+        }
+        addoptiLanguage("Golang")
+
+        //  edit approach
+        const secondlang=document.querySelector("li:nth-child(2)");
+        // secondlang.innerHTML="Mojo";
+        const newli=document.createElement('li');
+        newli.textContent="Mojo";
+        secondlang.replacewith(newli);
+
+
+        //  edit approach
+        const firstLanguage=docment.querySelector("li:firstChild");
+        firstLanguage.outerHTML='<li>TypeScript</li>'
+        
+         //  remove approach
+
+        const lastLanguage=docment.querySelector("li:lastChild");
+       lastLanguage.remove();
+
+       
+    </script>
+</html>
