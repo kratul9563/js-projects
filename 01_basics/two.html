@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kratul</title>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+      const div = document.createElement('div');
+      console.log(div);
+      div.className="main"
+      div.id = Math.round(Math.random()*10 + 1)
+      div.setAttribute("title","generatedTitle")
+      div.style.backgroundColor="green"
+      div.style.padding="12px"
+    //   div.innerText="Kratul"
+      const addText=document.createTextNode("Kratul")
+      div.appendChild(addText);
+
+      document.body.appendChild(div)
+      </script>
+          
+</html>
